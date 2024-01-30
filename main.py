@@ -16,7 +16,9 @@ def get_words_from_file():
         while line:
             array.append(line)
             line = file.readline().strip()
-    return array
+    array_to_set = set(array)
+    new_array = list(array_to_set)
+    return new_array
 
 
 def random_word(array):
